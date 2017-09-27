@@ -1,0 +1,17 @@
+<div *ngIf = "visible" class = "ng-simple-notifier-container" 
+[ngClass] = "classes?.container">
+  <div class = "ng-simple-notifier" [ngClass] = "classes?.notifier">
+    <div class = "ng-simple-notifier-inner">
+      <div class = "ng-simple-notifier-icon" [ngClass] = "classes?.icon"></div>
+      <div class = "ng-simple-notifier-messages">
+        <div class = "ng-simple-notifier-message" *ngFor = "let part of message">
+          {{part}}
+        </div>
+      </div>
+      <div class = "ng-simple-notifier-closer" [ngClass] = "classes?.closer"
+      (click) = "close()">
+        <span *ngIf = "!classes?.closer">&times;</span>
+      </div>
+    </div>
+  </div>
+</div>
