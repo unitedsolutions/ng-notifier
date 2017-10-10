@@ -4,7 +4,7 @@
 	(factory((global.ngNotifier = {}),global.ng.core,global.ng.common,global._,global.Rx));
 }(this, (function (exports,core,common,_,rxjs) { 'use strict';
 
-var Notifier = (function () {
+var Notifier = /** @class */ (function () {
     function Notifier() {
     }
     Notifier.prototype.registerHandle = function (handle) {
@@ -46,7 +46,7 @@ var Notifier = (function () {
     return Notifier;
 }());
 
-var SimpleNotifierComponent = (function () {
+var SimpleNotifierComponent = /** @class */ (function () {
     function SimpleNotifierComponent(notifier) {
         this.notifier = notifier;
         this.activeTime = 2000;
@@ -81,7 +81,7 @@ var SimpleNotifierComponent = (function () {
     return SimpleNotifierComponent;
 }());
 
-var ActionsNotifierComponent = (function () {
+var ActionsNotifierComponent = /** @class */ (function () {
     function ActionsNotifierComponent(notifier) {
         this.notifier = notifier;
     }
@@ -113,7 +113,7 @@ var ActionsNotifierComponent = (function () {
     return ActionsNotifierComponent;
 }());
 
-var NotifierComponentsModule = (function () {
+var NotifierComponentsModule = /** @class */ (function () {
     function NotifierComponentsModule() {
     }
     NotifierComponentsModule.decorators = [
@@ -136,7 +136,7 @@ var NotifierComponentsModule = (function () {
     return NotifierComponentsModule;
 }());
 
-var NotifierServicesModule = (function () {
+var NotifierServicesModule = /** @class */ (function () {
     function NotifierServicesModule() {
     }
     NotifierServicesModule.decorators = [

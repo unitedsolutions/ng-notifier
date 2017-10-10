@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Notifier } from './notifier.service';
-var NotifierServicesModule = (function () {
+var NotifierServicesModule = /** @class */ (function () {
     function NotifierServicesModule() {
     }
     NotifierServicesModule.decorators = [

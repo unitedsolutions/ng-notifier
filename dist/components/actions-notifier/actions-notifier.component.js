@@ -1,7 +1,7 @@
 import * as _ from 'lodash';
 import { Component, Input } from '@angular/core';
 import { Notifier } from '../../services/notifier.service';
-var ActionsNotifierComponent = (function () {
+var ActionsNotifierComponent = /** @class */ (function () {
     function ActionsNotifierComponent(notifier) {
         this.notifier = notifier;
     }

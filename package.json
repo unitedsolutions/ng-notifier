@@ -3,7 +3,6 @@
   "version": "0.5.0",
   "description": "Notification/modals library for angular apps",
   "main": "./dist/ng-notifier.umd.js",
-  "module": "./dist/ng-notifier.js",
   "typings": "./dist/ng-notifier.d.ts",
   "scripts": {
     "build": "npm run clean && npm run inline && npm run ngc && npm run bundle && npm run clean:tmp",
@@ -39,6 +38,8 @@
     "@angular/common": ">=4.3.6"
   },
   "devDependencies": {
+    "@angular/core": "^4.3.6",
+    "@angular/common": "^4.3.6",
     "@angular/animations": "^4.2.0",
     "@angular/cli": "^1.2.0",
     "@angular/compiler": "^4.2.0",

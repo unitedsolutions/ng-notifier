@@ -1,7 +1,7 @@
 import * as _ from 'lodash';
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-var Notifier = (function () {
+var Notifier = /** @class */ (function () {
     function Notifier() {
     }
     Notifier.prototype.registerHandle = function (handle) {

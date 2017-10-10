@@ -24,6 +24,7 @@ export class SimpleNotifierComponent {
   }
 
   close() {
+    clearTimeout(this.timeout);
     this.visible = false;
   }
 
